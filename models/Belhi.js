@@ -8,6 +8,7 @@ const BelhiSchema = mongoose.Schema({
     ref: "User",
   },
   followers: [{ type: mongoose.Types.ObjectId, ref: "User" }],
+  count: Number,
 });
 
 const Belhi = mongoose.model("Belhi", BelhiSchema);

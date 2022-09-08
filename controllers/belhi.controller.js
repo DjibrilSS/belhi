@@ -15,6 +15,8 @@ module.exports.belhiControllers = {
         name: req.body.name,
         text: req.body.text,
         creater: req.user.id,
+        followers: req.user.id,
+        count: req.body.count,
       });
       res.json(data);
     } catch (e) {
